@@ -1,5 +1,6 @@
 This is a final project of the Software Tester course at Software Development Academy that I finished.
 It was made based on training web banking app GURU99, a spectial web app designed for practising software testing abilities.
+In the src directory I'm creating an automated tests for GURU99. Skeleton of the project is based on cucumber-java-skeleton: https://github.com/cucumber/cucumber-java-skeleton
 
 Main objectives for the final project were:
 1. Analyze provided  app specification as part of static analysis.
