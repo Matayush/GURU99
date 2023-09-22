@@ -1,0 +1,132 @@
+{
+  "id": "a99a040a-ec8f-4824-a0eb-ae80be453369",
+  "version": "2.0",
+  "name": "GURU99",
+  "url": "https://demo.guru99.com",
+  "tests": [{
+    "id": "083c6b9a-43ca-4545-9540-fc456df02994",
+    "name": "Test GURU99 IDE",
+    "commands": [{
+      "id": "46762d41-90b4-44ee-9591-7ada26747db3",
+      "comment": "",
+      "command": "open",
+      "target": "/v4/manager/Managerhomepage.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "602d4b42-7fbd-4075-9806-5621407347b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea98d9b0-2971-48f0-96a5-c0c613a246e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit Account",
+      "targets": [
+        ["linkText=Edit Account", "linkText"],
+        ["css=.menusubnav > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit Account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'editAccount.php')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73dc0acd-efb1-4339-b4f0-bb27c527d8ad",
+      "comment": "",
+      "command": "click",
+      "target": "name=AccSubmit",
+      "targets": [
+        ["name=AccSubmit", "name"],
+        ["css=tr:nth-child(11) input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='AccSubmit']", "xpath:attributes"],
+        ["xpath=//tr[11]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f5137e0-ad49-4903-b92c-06d00a74f162",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please fill all fields",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51a14648-6ca7-4abe-9ba2-bfe02efc5aab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'Managerhomepage.php')])[2]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56e92f46-d73c-4ad5-95a1-19f4009cbd2e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.menusubnav > li:nth-child(15) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Logout.php')]", "xpath:href"],
+        ["xpath=//div/ul/li[15]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bd2675f-903b-4d84-b8db-7dafb82eb1cb",
+      "comment": "",
+      "command": "type",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "mngr525086"
+    }, {
+      "id": "6cb65cf5-94eb-44d8-a0ac-77325aaa858b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456@"
+    }, {
+      "id": "8d09f690-6709-4ac5-aff4-0c40ca9cf3c6",
+      "comment": "",
+      "command": "click",
+      "target": "name=btnLogin",
+      "targets": [
+        ["name=btnLogin", "name"],
+        ["css=tr:nth-child(3) input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='btnLogin']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f61d098d-0eb8-4483-9f1d-e7933ce5632d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["083c6b9a-43ca-4545-9540-fc456df02994"]
+  }],
+  "urls": ["https://demo.guru99.com/"],
+  "plugins": []
+}
