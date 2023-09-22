@@ -1,0 +1,72 @@
+"ID","Title","Automation Type","Created By","Created On","Estimate","Forecast","Preconditions","Priority","References","Section","Section Depth","Section Description","Section Hierarchy","Steps","Steps","Steps (Additional Info)","Steps (Expected Result)","Steps (Step)","Suite","Suite ID","Template","Type","Updated By","Updated On"
+"C3","Zakładanie konta"," None","Mateusz Ceniuk","8/30/2023 7:01 PM","","","Otwarta strona logowania Banku Guru99:
+https://demo.guru99.com/v4/index.php
+","Medium","","Test Cases","0","","Test Cases","","1. Zlokalizuj odnośnik """"here"""" i kliknij w niego( Znajduje się pod bannerem Steps to Generate Access).
+Expected Result:
+Odnośnik otworzył nową stronę, gdzie możesz podać adres email.
+
+
+Uwagi: Pytanie o email ID- czy tego typu błąd oznacza, że test case nie przeszedł, czy test przechodzi i po prostu dodajemy błąd do JIRy.
+
+2. Wpisz poprawny adres email i kliknij button Submit.
+Expected Result:
+Po wpisaniu poprawnego adresu email i kliknięciu Submit następuje przekierowanie na stronę gdzie wyświetlone są nasze USER ID i Password.","","Odnośnik otworzył nową stronę, gdzie możesz podać adres email.
+
+
+Uwagi: Pytanie o email ID- czy tego typu błąd oznacza, że test case nie przeszedł, czy test przechodzi i po prostu dodajemy błąd do JIRy.
+
+","Zlokalizuj odnośnik ""here"" i kliknij w niego( Znajduje się pod bannerem Steps to Generate Access).","Master","S2","Test Case (Steps)","Other","Mateusz Ceniuk","8/30/2023 7:01 PM"
+"C4","logowanie z poprawnymi danymi do logowania"," None","Mateusz Ceniuk","8/31/2023 4:27 PM","","","1. Otwarta strona logowania(https://demo.guru99.com/v4/index.php).
+2. Posiadamy poprawny UserID i Password.
+UserID: mngr525086
+Password: ApUbAdy
+
+
+","Medium","","Test Cases","0","","Test Cases","","1. 1. Wpisuję poprawny UserID i Password.
+2. Klikam button login.
+
+    
+
+
+Expected Result:
+1. Jestem zalogowany i aplikacja przenosi mnie na stronę gł&oacute;wną Managera.","","1. Jestem zalogowany i aplikacja przenosi mnie na stronę gł&oacute;wną Managera.","1. Wpisuję poprawny UserID i Password.
+2. Klikam button login.
+
+    
+
+","Master","S2","Test Case (Steps)","Other","Mateusz Ceniuk","8/31/2023 5:05 PM"
+"C5","Zmiana hasła"," None","Mateusz Ceniuk","8/31/2023 4:47 PM","","","1. Jestem zalogowany na stronie głównej banku na koncie managera (https://demo.guru99.com/v4/manager/Managerhomepage.php).
+
+ ","Medium","","Test Cases","0","","Test Cases","","1. 1. Klikam w zakładkę """"Change Password"""".
+
+
+Expected Result:
+1. Aplikacja przenosi mnie do zakładki """"Change Password"""".2. 1. Wpisuję swoje obecne hasło w pole Old Password: ApUbAdy
+2. Wpisuje nowe hasło w pole New Passowrd: 123456@
+
+3. Wpisuję ponownie nowe hasło w pole Confirm Password.
+4. Klikam submit.
+
+
+Expected Result:
+1. Otrzymuję komunikat: """"Password is Changed"""".
+2. Zostaję wylogowany i przeniesiony na stronę logowania.","","1. Aplikacja przenosi mnie do zakładki ""Change Password"".","1. Klikam w zakładkę ""Change Password"".
+
+","Master","S2","Test Case (Steps)","Other","Mateusz Ceniuk","8/31/2023 4:47 PM"
+"C6","Sprawdzenie funkcji """"Mini Statement"""""," None","Mateusz Ceniuk","8/31/2023 4:54 PM","","","1. Jestem zalogowany na stronie głównej banku na koncie managera (https://demo.guru99.com/v4/manager/Managerhomepage.php).","Low","","Test Cases","0","","Test Cases","","1. 1. Klikam w zakładkę """"Mini Statement"""".
+Expected Result:
+2. Aplikacja przenosi mnie na zakładkę """"Mini Statement Form"""".2. 1. Wpisuję numer konta w polu """"Account No"""": 126214.
+2. Klikam button """"Submit"""".
+
+
+Expected Result:
+1. Wyświetla się """"Mini Statement"""" z ostatnimi transakcjami na koncie.","","2. Aplikacja przenosi mnie na zakładkę ""Mini Statement Form"".","1. Klikam w zakładkę ""Mini Statement"".","Master","S2","Test Case (Steps)","Other","Mateusz Ceniuk","8/31/2023 4:54 PM"
+"C7","Sprawdzenie funkcji """"Deposit"""""," None","Mateusz Ceniuk","8/31/2023 5:03 PM","","","1. Jestem zalogowany na stronie głównej banku na koncie managera (https://demo.guru99.com/v4/manager/Managerhomepage.php).","Medium","","Test Cases","0","","Test Cases","","1. 1. Klikam w zakładkę """"Deposit"""".
+Expected Result:
+2. Aplikacja przenosi mnie na zakładkę """"Amount Deposit Form"""".2. 1. Wpisuję numer konta na kt&oacute;re chcę dokonać wpłaty środk&oacute;w w pole """"Account No"""": 126214.
+2. Wpisuję kwotę 0000 w pole """"Amount"""".
+3. Wpisuje słowo opis w pole """"Description"""".
+
+
+Expected Result:
+1. Otrzymuję komunikat o poprawnie wykonanej operacji.","","2. Aplikacja przenosi mnie na zakładkę ""Amount Deposit Form"".","1. Klikam w zakładkę ""Deposit"".","Master","S2","Test Case (Steps)","Other","Mateusz Ceniuk","8/31/2023 5:03 PM"
