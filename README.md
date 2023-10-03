@@ -1,5 +1,6 @@
-This is the final project of the Software Tester course at Software Development Academy that I finished.
+This is the Final Project of the Software Tester course at Software Development Academy that I finished.
 It was made based on the training web banking app GURU99, a special web app designed for practicing software testing abilities.
+There is also some API testing made for the purpose of the Final project in SDA using Postman in the Herokuapp testing site.
 In the src directory, I'm creating automated tests for GURU99. The skeleton of the project is based on cucumber-java-skeleton: https://github.com/cucumber/cucumber-java-skeleton
 
 The main objectives for the final project were:
